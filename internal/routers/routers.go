@@ -1,6 +1,9 @@
+package routers
+
 import (
-	"github.com/koushilab/MRUAppTest/internal/handlers"
 	"github.com/gin-gonic/gin"
+	"github.com/koushilab/MRUAppTest/internal/handlers"
+	"github.com/labstack/gommon/log"
 )
 
 //StartServer starts the server with the provided list of routes from  SetupRoutes() method
