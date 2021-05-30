@@ -15,9 +15,9 @@ type MRUs interface {
 
 type MRUInfo struct{}
 
-func (mrus MRUInfo) getMRUs(c *gin.Context) {
+func (mrus MRUInfo) GetMRUs(c *gin.Context) {
 
-	data := MRUApp.MakeTestInput()
+	data := MRUApp.MakeTestInput().State
 
 	result, err := json.MarshalIndent(data, "", "    ")
 	if err != nil {
