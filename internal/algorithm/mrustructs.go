@@ -12,7 +12,7 @@ type State struct {
 }
 
 type Item struct {
-	label   string
+	Label   string
 	Payload Payload
 }
 
